@@ -84,7 +84,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en desarrollar y evaluar un modelo de predicción de series de tiempo basado en técnicas de deep learning, para su aplicación en problemas demográficos relevantes. El trabajo tendrá un presupuesto preliminar estimado de 600 horas de trabajo, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en desarrollar y evaluar un modelo de predicción de series de tiempo basado en técnicas de deep learning, para su aplicación en problemas demográficos relevantes. El trabajo tendrá un presupuesto preliminar estimado de 610 horas de trabajo, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -360,16 +360,19 @@ Para el desarrollo del presente proyecto se supone que:
 		\begin{enumerate}
 				\item El modelo de predicción de la TGF debe ser capaz de predecir con un error menor al 10\% las tasas futuras a partir de los datos de series de tiempo históricos y covariables relevantes seleccionadas.
 				\item El sistema debe ser capaz de procesar y normalizar de forma automatizada los datos de entrada, asegurando que estén listos para el modelo de predicción sin tener que  intervenir manualmente.
+				\item Los resultados del modelo seq2seq deben ser validados y aprobados por los usuarios finales y  expertos en demografía antes de su implementación en entornos reales.
 			\end{enumerate}
 	\item Requerimientos de documentación:
 		\begin{enumerate}
-				\item Los resultados del modelo seq2seq deben ser validados y aprobados por los usuarios finales y  expertos en demografía antes de su implementación en entornos reales.
-				\item El modelo debe ser probado en diferentes escenarios, incluyendo datos de series de tiempo de diferentes países y períodos, para asegurar estabilidad y robustez en la predicción.
+				\item Se deberá crear un informe de avance del plan y una memoria técnica, dónde quedará documentado todo el proceso del proyecto.
+				\item La documentación generada deberá incluir una guía detallada para la configuración y ejecución del modelo, así como un repositorio en GitHub que contenga todo el código, datos de ejemplo y una guía de usuario para la correcta interpretación de los resultados.
+
 			\end{enumerate}
 	\item Requerimiento de testing
 		\begin{enumerate}
+			\item El modelo debe ser probado en diferentes escenarios, incluyendo datos de series de tiempo de diferentes países y períodos, para asegurar estabilidad y robustez en la predicción.
 			\item El código desarrollado deberá estar correctamente comentado y estructurado, para facilitar su comprensión y reproducibilidad por parte de terceros.
-			\item La documentación generada deberá incluir una guía detallada para la configuración y ejecución del modelo, así como un repositorio en GitHub que contenga todo el código, datos de ejemplo y una guía de usuario para la correcta interpretación de los resultados.
+
 		\end{enumerate}
 
 \end{enumerate}
@@ -397,7 +400,7 @@ Las historias de usuarios se ponderan en base a las siguientes categorías:
 	\item Incertidumbre asociada a la actividad, es decir el nivel de riesgo que involucra realizar la tarea.
 \end{itemize}
 
-A cada categoría se le asignaran valores de ponderación entre 1 (bajo) y 5 (alto), siendo 3 el valor medio. A las historias de usuario se les asigna un peso igual a la suma de cada categoría y luego se reemplazara por el número de la serie de Fibonacci siguiente inmediato, de forma de aproximar la estimación de velocidad y salida del trabajo.
+A cada categoría se le asignarán valores de ponderación entre 1 (bajo) y 5 (alto), siendo 3 el valor medio. A las historias de usuario se les asigna un peso igual a la suma de cada categoría y luego se reemplazará por el número de la serie de Fibonacci siguiente inmediato, de forma de aproximar la estimación de velocidad y salida del trabajo.
 
 \begin{itemize}
 	\item Como investigador interesado en la predicción de series de tiempo, quiero una introducción clara y detallada sobre los modelos seq2seq y sus aplicaciones, para entender cómo estos modelos pueden mejorar las predicciones en contextos demográficos y otros campos.
@@ -421,7 +424,7 @@ A cada categoría se le asignaran valores de ponderación entre 1 (bajo) y 5 (al
 \end{itemize}
 
 \begin{itemize}
-	\item Como demógrafo, quiero un análisis de las predicciones y su interpretación en un contexto demográfico, para entender las implicaciones de los resultados y evaluar su aplicación en la planificación de políticas públicas.
+	\item Como demógrafo, quiero un análisis de las predicciones y su interpretación en un contexto demográfico, para entender las implicancias de los resultados y evaluar su aplicación en la planificación de políticas públicas.
 	\begin{itemize}
 		\item Dificultad: 	3
 		\item Complejidad: 	3
@@ -481,7 +484,7 @@ Los entregables del proyecto son:
 	\begin{enumerate}
 		\item Descripción del proyecto. (5 h)
 		\item Definición de alcance y requerimientos. (10 h)
-		\item Planificación de recursos, cronograma y gestión de Riesgos. (25 h)
+		\item Planificación de recursos, cronograma y gestión de riesgos. (25 h)
 		\item Seguimiento y control del proyecto. (20 h)
 	\end{enumerate}
 	
@@ -489,7 +492,7 @@ Los entregables del proyecto son:
 	\begin{enumerate}
 		\item Recolección de datos y selección de covariables. (40 h)
 		\item Limpieza, transformación y normalización de datos. (40 h)
-		\item Análisis Exploratorio de los datos (EDA). (20 h)
+		\item Análisis exploratorio de los datos (EDA). (20 h)
 	\end{enumerate}
 	
 	\item Desarrollo del modelo seq2seq (120 h)
@@ -507,17 +510,19 @@ Los entregables del proyecto son:
 		\item Ajuste de hiperparámetros y optimización del modelo. (40 h)
 	\end{enumerate}
 	
-	\item Análisis de Resultados (65 h)
+	\item Análisis de resultados (65 h)
 	\begin{enumerate}
 		\item Análisis de resultados e interpretación en contexto demográfico. (30 h)
 		\item Revisión de resultados y ajustes finales del modelo. (35 h)
 	\end{enumerate}
 	
-	\item Documentación y Reporte Final (95 h)
+	\item Documentación y reporte final (95 h)
 	\begin{enumerate}
-		\item Documentación técnica del modelo y proceso completo. (30 h)
-		\item Creación de un pepositorio en GitHub para publicar código y documentación. (30 h)
-		\item Generación de reportes detallados de resultados y conclusiones. (35 h)
+		\item Elaboración de informe de avance. (25 h)
+		\item Generación de reportes detallados de resultados y conclusiones. (20 h)
+		\item Elaboración de memoria técnica. (40 h)
+		\item Creación de un repositorio en GitHub para publicar código y documentación. (10 h)
+
 	\end{enumerate}
 
 	\item Presentación del trabajo (50 h)
@@ -567,107 +572,143 @@ Es recomendable usar colores y un cuadro indicativo describiendo qué representa
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
 
-\begin{consigna}{red}
-Existen muchos programas y recursos \textit{online} para hacer diagramas de Gantt, entre los cuales destacamos:
+%\begin{consigna}{red}
+%Existen muchos programas y recursos \textit{online} para hacer diagramas de Gantt, entre los cuales destacamos:
+%
+%\begin{itemize}
+%\item Planner
+%\item GanttProject
+%\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
+%\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
+%\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
+%\end{itemize}
+%
+%Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
+%Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
+%
+%Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
+%Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
+%Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
+%
+%En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. 
+%En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
+%
+%Las fechas pueden ser calculadas utilizando alguna de las herramientas antes citadas. Sin embargo, el siguiente ejemplo
+%fue elaborado utilizando 
+%\href{https://docs.google.com/spreadsheets/d/1fBz8NhSpc4tkkhz3KjJCbh1nR_ltDkfEcZi4tZXduqs}{esta hoja de cálculo}.
+%
+%Es importante destacar que el ancho del diagrama estará dado por la longitud del texto utilizado para las tareas 
+%(Ejemplo: tarea 1, tarea 2, etcétera) y el valor \textit{x unit}. Para mejorar la apariencia del diagrama, es necesario
+%ajustar este valor y, quizás, acortar los nombres de las tareas.
+%
+%\begin{figure}[htpb]
+%  \begin{center}
+%    \begin{ganttchart}[
+%      time slot unit=day,
+%      time slot format=isodate,
+%      x unit=0.038cm,
+%      y unit title=0.7cm,
+%      y unit chart=0.6cm,
+%      milestone/.append style={xscale=4}
+%      ]{2021-03-05}{2021-12-16}
+%      \gantttitlecalendar*{2021-03-05}{2021-12-16}{year} \\
+%      \gantttitlecalendar*{2021-03-05}{2021-12-16}{month} \\
+%      \ganttgroup{Duración Total}{2021-03-05}{2021-12-16} \\
+%      %%%%%%%%%%%%%%%%%Organización
+%      \ganttgroup{Organización}{2021-03-05}{2021-04-16} \\
+%      \ganttbar{Planificación del proyecto}{2021-03-05}{2021-04-15} \\
+%      %%%%%%%%%%%%%%%%%Ejecución
+%      \ganttgroup{Ejecución}{2021-04-16}{2021-10-21} \\
+%      \ganttbar{Tarea 1}{2021-04-16}{2021-04-29} \\
+%      \ganttbar{Tarea 2}{2021-04-30}{2021-05-13} \\
+%      \ganttbar{Tarea 3}{2021-05-14}{2021-05-27} \\
+%      \ganttbar{Tarea 4}{2021-05-28}{2021-07-12} \\
+%      \ganttbar{Tarea 5}{2021-07-13}{2021-08-09} \\
+%      \ganttbar{Tarea 6}{2021-08-10}{2021-09-23} \\
+%      \ganttbar{Tarea 7}{2021-09-24}{2021-09-30} \\
+%      \ganttbar{Tarea 8}{2021-10-01}{2021-10-14} \\
+%      \ganttbar{Tarea 9}{2021-10-15}{2021-10-21} \\
+%      % %%%%%%%%%%%%%%%%%Finalización
+%      \ganttgroup{Finalización}{2021-10-22}{2021-12-16} \\
+%      \ganttbar{Memoria v1}{2021-10-22}{2021-11-04} \\
+%      \ganttbar{Memoria v2}{2021-11-05}{2021-11-18} \\
+%      \ganttbar{Memoria final}{2021-11-19}{2021-12-02} \\
+%      % La fecha del siguiente milestone es la fecha en que terminamos la memoria
+%      \ganttmilestone{Enviar memoria al director}{2021-12-02} \\
+%      \ganttbar{Elaborar la presentación}{2021-12-03}{2021-12-16} \\
+%      \ganttmilestone{Ensayo de la presentación}{2021-12-16} \\
+%      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    \end{ganttchart}
+%  \end{center}
+%  \caption{Diagrama de gantt de ejemplo}
+%  \label{fig:gantt}
+%\end{figure}
+%
+%
+%\begin{landscape}
+%\begin{figure}[htpb]
+%\centering 
+%\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
+%\caption{Ejemplo de diagrama de Gantt (apaisado).} %Modificar este título acorde.
+%\label{fig:diagGantt}
+%\end{figure}
+%
+%\end{landscape}
+%
+%\end{consigna}
 
-\begin{itemize}
-\item Planner
-\item GanttProject
-\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-\end{itemize}
-
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
-Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. 
-En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-Las fechas pueden ser calculadas utilizando alguna de las herramientas antes citadas. Sin embargo, el siguiente ejemplo
-fue elaborado utilizando 
-\href{https://docs.google.com/spreadsheets/d/1fBz8NhSpc4tkkhz3KjJCbh1nR_ltDkfEcZi4tZXduqs}{esta hoja de cálculo}.
-
-Es importante destacar que el ancho del diagrama estará dado por la longitud del texto utilizado para las tareas 
-(Ejemplo: tarea 1, tarea 2, etcétera) y el valor \textit{x unit}. Para mejorar la apariencia del diagrama, es necesario
-ajustar este valor y, quizás, acortar los nombres de las tareas.
 
 \begin{figure}[htpb]
-  \begin{center}
-    \begin{ganttchart}[
-      time slot unit=day,
-      time slot format=isodate,
-      x unit=0.038cm,
-      y unit title=0.7cm,
-      y unit chart=0.6cm,
-      milestone/.append style={xscale=4}
-      ]{2021-03-05}{2021-12-16}
-      \gantttitlecalendar*{2021-03-05}{2021-12-16}{year} \\
-      \gantttitlecalendar*{2021-03-05}{2021-12-16}{month} \\
-      \ganttgroup{Duración Total}{2021-03-05}{2021-12-16} \\
-      %%%%%%%%%%%%%%%%%Organización
-      \ganttgroup{Organización}{2021-03-05}{2021-04-16} \\
-      \ganttbar{Planificación del proyecto}{2021-03-05}{2021-04-15} \\
-      %%%%%%%%%%%%%%%%%Ejecución
-      \ganttgroup{Ejecución}{2021-04-16}{2021-10-21} \\
-      \ganttbar{Tarea 1}{2021-04-16}{2021-04-29} \\
-      \ganttbar{Tarea 2}{2021-04-30}{2021-05-13} \\
-      \ganttbar{Tarea 3}{2021-05-14}{2021-05-27} \\
-      \ganttbar{Tarea 4}{2021-05-28}{2021-07-12} \\
-      \ganttbar{Tarea 5}{2021-07-13}{2021-08-09} \\
-      \ganttbar{Tarea 6}{2021-08-10}{2021-09-23} \\
-      \ganttbar{Tarea 7}{2021-09-24}{2021-09-30} \\
-      \ganttbar{Tarea 8}{2021-10-01}{2021-10-14} \\
-      \ganttbar{Tarea 9}{2021-10-15}{2021-10-21} \\
-      % %%%%%%%%%%%%%%%%%Finalización
-      \ganttgroup{Finalización}{2021-10-22}{2021-12-16} \\
-      \ganttbar{Memoria v1}{2021-10-22}{2021-11-04} \\
-      \ganttbar{Memoria v2}{2021-11-05}{2021-11-18} \\
-      \ganttbar{Memoria final}{2021-11-19}{2021-12-02} \\
-      % La fecha del siguiente milestone es la fecha en que terminamos la memoria
-      \ganttmilestone{Enviar memoria al director}{2021-12-02} \\
-      \ganttbar{Elaborar la presentación}{2021-12-03}{2021-12-16} \\
-      \ganttmilestone{Ensayo de la presentación}{2021-12-16} \\
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \end{ganttchart}
-  \end{center}
-  \caption{Diagrama de gantt de ejemplo}
-  \label{fig:gantt}
+	\vspace*{\fill} % Esto centra verticalmente
+	\centering 
+	\includegraphics[height=.7\textheight]{./Figuras/GDPgantttabla.png}
+	\caption{Desglose de tareas de diagrama de Gantt.} %Modificar este título acorde.
+	\label{fig:diagGantt1}
+	\vspace*{\fill} % Esto centra verticalmente
 \end{figure}
 
 
 \begin{landscape}
+	\vspace*{\fill} % Esto centra verticalmente
 \begin{figure}[htpb]
 \centering 
-\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
-\caption{Ejemplo de diagrama de Gantt (apaisado).} %Modificar este título acorde.
-\label{fig:diagGantt}
+\includegraphics[height=.65\textheight]{./Figuras/GDPgantt11.png}
+\caption{Primera parte del Diagrama de Gantt (apaisado).} %Modificar este título acorde.
+\label{fig:diagGantt2}
 \end{figure}
-
+\vspace*{\fill} % Esto centra verticalmente
 \end{landscape}
 
-\end{consigna}
+\begin{landscape}
+	\vspace*{\fill} % Esto centra verticalmente
+	\begin{figure}[htpb]
+		\centering 
+		\includegraphics[height=.7\textheight]{./Figuras/GDPgantt22.png}
+		\caption{Segunda parte del Diagrama de Gantt (apaisado).} %Modificar este título acorde.
+		\label{fig:diagGantt3}
+	\end{figure}
+	\vspace*{\fill} % Esto centra verticalmente
+\end{landscape}
 
 
 \section{12. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
-\begin{consigna}{red}
-Si el proyecto es complejo entonces separarlo en partes:
-\begin{itemize}
-	\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-	\item El desglose detallado del subtotal de cada una de las áreas.
-\end{itemize}
+%\begin{consigna}{red}
+%Si el proyecto es complejo entonces separarlo en partes:
+%\begin{itemize}
+%	\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
+%	\item El desglose detallado del subtotal de cada una de las áreas.
+%\end{itemize}
+%
+%IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
+%
+%Incluir la aclaración de si se emplea como moneda el peso argentino (ARS) o si se usa moneda extranjera (USD, EUR, etc). Si es en moneda extranjera se debe indicar la tasa de conversión respecto a la moneda local en una fecha dada.
+%
+%\end{consigna}
 
-IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
-
-Incluir la aclaración de si se emplea como moneda el peso argentino (ARS) o si se usa moneda extranjera (USD, EUR, etc). Si es en moneda extranjera se debe indicar la tasa de conversión respecto a la moneda local en una fecha dada.
-
-\end{consigna}
+A continuación se detalla el presupuesto del proyecto con sus costos expresados en pesos
+uruguayos (UYU). 
 
 \begin{table}[htpb]
 \centering
@@ -678,26 +719,15 @@ Incluir la aclaración de si se emplea como moneda el peso argentino (ARS) o si 
 \rowcolor[HTML]{C0C0C0} 
 Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
-  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
-  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario (UYU)} &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total (UYU)} \\ \hline
+Horas del Responsable (HH) &
+  \multicolumn{1}{c|}{610} &
+  \multicolumn{1}{c|}{\$U 2.400} &
+  \multicolumn{1}{c|}{\$U 1.464.000} \\ \hline
+
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{\$U 1.464.000} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -705,22 +735,14 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+\multicolumn{1}{|l|}{Equipos informáticos} & 1
+   & \multicolumn{1}{c|}{\$U 70.000}
+   &  \multicolumn{1}{c|}{\$U 70.000}
+\\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{\$U 70.000} \\ \hline
 \rowcolor[HTML]{C0C0C0}
-\multicolumn{3}{|c|}{TOTAL} &
+\multicolumn{3}{|c|}{TOTAL} & \multicolumn{1}{c|}{\$U 1.534.000}
    \\ \hline
 \end{tabularx}%
 \end{table}
